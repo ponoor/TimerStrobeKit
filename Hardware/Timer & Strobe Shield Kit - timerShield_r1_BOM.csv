@@ -1,0 +1,18 @@
+Device,Value,Package,Manufacture,MPN,Parts,Qty,Description,Source
+Multilayer Ceramic Capacitors MLCC,10uF ±10% 50V X5R,C1206,Samsung Electro-Mechanics,CL31A106KBHNNNE,C1,1,302010181,https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL31A106KBHNNNE_10uF-106-10-50V_C13585.html
+Aluminum Electrolytic Capacitor,470uF ±20% 35V,d10x15,CX(Dongguan Chengxing Elec),C45081,C2,1,"1,000µF/1mF ceramic capacitors",https://lcsc.com/product-detail/Aluminum-Electrolytic-Capacitors-Leaded_CX-Dongguan-Chengxing-Elec-C45081_C45081.html
+Multilayer Ceramic Capacitors MLCC,22uF ±20% 10V X5R,C0805,Samsung Electro-Mechanics,CL21A226MPQNNNE,C3,1,302010171,https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL21A226MPQNNNE_22uF-226-20-10V_C29277.html
+Aluminum Electrolytic Capacitor,470uF ±20% 10V,"Radial,6.3x11mm",CX(Dongguan Chengxing Elec),C43326,C4,1,100µF polarized capacitors,https://lcsc.com/product-detail/Aluminum-Electrolytic-Capacitors-Leaded_CX-Dongguan-Chengxing-Elec-470uF-10V-6-3-11_C43326.html
+SMD-LED-CLEAR-GREEN(0603),GREEN-0603,LED-0603,Orient,ORH-G36G,D1,1,304090043,https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_0603-green_C205443.html
+Schottky Barrier Diode,100V 2A,SMA(DO-214AC),Slkor(SLKORMICRO Elec.),SS210,"D2, D3",2,Schottky diode,https://lcsc.com/product-detail/Schottky-Barrier-Diodes-SBD_Slkor-SLKORMICRO-Elec-SS210_C488408.html
+DC-DC converter module,"5V-36V, 500m 5vOUT",SIP-3,MORNSUN Guangzhou S& T,K7805-500R3,IC1,1,Voltage Regulator,https://lcsc.com/product-detail/Power-Modules_K7805-500R3_C86735.html
+Power connector,"5.5mm, 2.1mm",POWER_JACK_PTH,GANGYUAN,DC-470-2.1GP,J1,1,Power Jack,https://lcsc.com/product-detail/Power-Connectors_GANGYUAN-DC-470-2-1GP_C194407.html
+Toggle Switch,SPDT 300mA @ 6VDC,SMD,ALPS Electric,SSSS213202,MODE,1,Slide Switch SMT ALPS SSSS213202,https://lcsc.com/product-detail/Toggle-Switches_ALPS-Electric-SSSS213202_C115375.html
+MOSFET-NCH,60V 20A,DPAK,PUOLOP,PTD20N06,Q1,1,N-channel MOSFETs,https://lcsc.com/product-detail/MOSFET_PUOLOP-PTD20N06_C479052.html
+SMD resistor,10R,R0603,,,R1,1,,
+SMD resistor,1k,R0603,,,R2,1,,
+Through Hole Tactile Switch,MOMENTARY-SPST,Through Hole,SHOU HAN,TS665CJ,"S1, S2",2,Momentary Switch (Pushbutton) - SPST,https://lcsc.com/product-detail/Tactile-Switches_SHOU-HAN-TS665CJ_C393938.html
+Variable Resistor,10k,RK09,ALPS Electric,RK09K1130A5R,"VR1, VR2, VR3",3,Trimmer VR with housing terminal,https://lcsc.com/product-detail/Potentiometers-Variable-Resistors_ALPS-Electric-RK09K1130A5R_C209779.html
+Pluggable System Terminal Block Header,"2P, 5.08mm, Male",MSTBA2,Ningbo Kangnex Elec,WJ2EDGRC-5.08-2P,"X1, X2",2,PHOENIX,https://lcsc.com/product-detail/Pluggable-System-Terminal-Block_Ningbo-Kangnex-Elec-WJ2EDGRC-5-08-2P_C3697.html
+Arduino pinheaders long leg,"Pin Header Male Pin 0.100""(2.54mm) 40",1*40P,BOOMELE(Boom Precision Elec),C44526,,1,Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections,https://lcsc.com/product-detail/Pin-Header-Female-Header_BOOMELE-Boom-Precision-Elec-C44526_C44526.html
+Pluggable System Terminal Block Socket,"2P, 5.08mm, Female",MSTBA2,Ningbo Kangnex Elec,WJ2EDGK-5.08-2P,,1,,https://lcsc.com/product-detail/Pluggable-System-Terminal-Block_Ningbo-Kangnex-Elec-WJ2EDGK-5-08-2P-14-00A_C71370.html
