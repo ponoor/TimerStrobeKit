@@ -20,8 +20,8 @@ const uint32_t
 
 void setup_timer()
 {
-  // Put timer 1 in 8-bit phase correct pwm mode
   cli();  // disable interrupts
+  // Put timer 1 in 8-bit phase correct pwm mode
   bitSet(TCCR1A, WGM10);
   bitClear(TCCR1A, WGM11);
   bitClear(TCCR1B, WGM12);
@@ -33,7 +33,7 @@ void setup_timer()
   bitSet(TCCR1B, CS10);
 
   // Disable output compare A match interrupt
-  bitClear(TIMSK1, OCIE1A);
+  bitClear(TIMSK1, TOIE1);
 
   sei();  // enable interrupts
 }
@@ -74,16 +74,16 @@ void loop_timer(uint32_t currentTime)
 uint16_t 
   strobePeriod = 0,
   strobePulseLength = 0;
-ISR(TIMER1_COMPA_vect)
+
+ISR( TIMER1_OVF_vect )
 {
   ICR1 = strobePeriod;
   OCR1A = strobePulseLength;
 }
-
 void setup_strobe()
 {
   cli();  // disable interrupts
-  // Put timer 1 in 16-bit fast pwm mode
+  // Put timer1 in 16-bit fast pwm mode
   bitClear(TCCR1A, WGM10);
   bitSet(TCCR1A, WGM11);
   bitSet(TCCR1B, WGM12);
@@ -99,17 +99,26 @@ void setup_strobe()
   bitSet(TCCR1B, CS10);
 
   // Enable output compare A match interrupt
-  bitSet(TIMSK1, OCIE1A);
+  bitSet(TIMSK1, TOIE1);
 
   sei();  // enable interrupts
+  
 }
 
 void updateKnob_strobe()
 {
-  strobePeriod = (uint16_t)analogRead(knobPin[2]) << 5;
-  if (strobePeriod == 0) strobePeriod = 1;
-  strobePulseLength = (float)(analogRead(knobPin[0])/1023.0f) * (float)strobePeriod;
-  uint16_t offOffset = analogRead(knobPin[1]) << 4;
+  // strobePeriod = (uint16_t)analogRead(knobPin[2]) << 5;
+  float t = (float)analogRead(knobPin[2]) / 1023.0f;
+  strobePeriod = powf(t, 2.7f) * 65535.0f;
+  if (strobePeriod < 5) strobePeriod = 5;
+
+  // strobePulseLength = (float)(analogRead(knobPin[0])/1023.0f) * (float)strobePeriod;
+  t = (float)analogRead(knobPin[0]) / 1023.0f;
+  strobePulseLength = powf(t, 2.7f) * (float)strobePeriod;
+  
+  // uint16_t offOffset = analogRead(knobPin[1]) << 4;
+  t = (float)analogRead(knobPin[1]) / 1023.0f;
+  uint16_t offOffset = powf(t, 2.7f) * 19000.0f;
   strobePeriod += offOffset;
 }
 
