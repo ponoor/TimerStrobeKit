@@ -32,7 +32,7 @@ void setup_timer()
   bitClear(TCCR1B, CS11);
   bitSet(TCCR1B, CS10);
 
-  // Disable output compare A match interrupt
+  // Disable overflow interrupt
   bitClear(TIMSK1, TOIE1);
 
   sei();  // enable interrupts
@@ -98,7 +98,7 @@ void setup_strobe()
   bitSet(TCCR1B, CS11);
   bitSet(TCCR1B, CS10);
 
-  // Enable output compare A match interrupt
+  // Enable overflow interrupt
   bitSet(TIMSK1, TOIE1);
 
   sei();  // enable interrupts
